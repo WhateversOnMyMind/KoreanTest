@@ -1,3 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>Fill in the Blank Practice</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .blank-input {
+            width: 100px;
+            margin: 0 5px;
+            text-align: center;
+        }
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<img src="Kanye_West.jpg" alt="Kanye West">
+<h1>Fill in the Blank Practice</h1>
+<p>중간고사 화이팅!. <br>
+    정답을 입력하고, <strong>Check Answers</strong>누르면 정답확인</p>
+
+<button onclick="generateQuestion()">Generate Question</button>
+<button onclick="checkAnswers()">Check Answers</button>
+<button onclick="showCorrectAnswers()">Show Correct Answers</button>
+<div id="question-container"></div>
+<div id="result"></div>
+<div id="accuracy"></div>
+
 <script>
     const MEMORIZED_TEXT = `
 오등은 자에 아 조선의 독립국임과 조선인의 자주민임을 선언하노라. 차로써 세계만방에 고하야 인류평등의 대의를 극명하며, 차로써 자손만대에 고하야 민족자존의 정권을 영유케 하노라. 반만년 역사의 권위를 장하야 차를 선언함이며, 이천만 민중의 성충을 합하야 차를 포명함이며, 민족의 항구여일한 자유발전을 위하야 차를 주장함이며, 인류적 양심의 발로에 기인한 세계개조의 대기운에 순응병진하기 위하야 차를 제기함이니, 시ㅣ 천의 명명이며, 시대의 대세ㅣ며, 전인류 공존동생권의 정당한 발동이라, 천하하물이던지 차를 저지억제치 못할지니라.
@@ -104,3 +143,6 @@
     // Optional: Automatically generate the first question on page load
     window.onload = generateQuestion;
 </script>
+
+</body>
+</html>
